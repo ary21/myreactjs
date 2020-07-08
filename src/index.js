@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import App from './App';
+// import Home from './container/Home/Home';
+// import Users from './container/Users/Users';
+import Test from './container/Test/Test';
+
+/* try another way*/
+// const helloWorld = () => {
+//   return <p>Hello ReactJS from Arifin</p>
+// }
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Test />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
